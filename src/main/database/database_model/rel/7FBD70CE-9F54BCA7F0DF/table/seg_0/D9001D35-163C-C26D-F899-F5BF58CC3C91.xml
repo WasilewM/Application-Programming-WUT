@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9001D35-163C-C26D-F899-F5BF58CC3C91" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="PASSENGERS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>B40746A7-114F-A72A-EA2F-3AF6087E6C42</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PERSON_ID" id="5F446A95-9223-3C6B-A7EE-A39F1DB9106F">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>46B8B022-7E7A-243D-F76D-1B40C802D040</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="C3E9C176-9980-BD5A-BD99-496070BBC383">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>09EB841E-AC0F-A2ED-BF29-A63F6FF066F7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="A22DD719-72F4-8588-04E5-B28431C14971">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>A309CC4A-26FA-10BF-BFA7-ABBBC9F69892</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F130C27C-9605-EC81-163D-26BF2DD773C1" name="PASSENGERS_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>FDEADC8D-8322-9993-0CA7-ED98CFDE3432</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F446A95-9223-3C6B-A7EE-A39F1DB9106F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F21B50FF-B9C9-91C3-B10D-A037339A9A02" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00318239">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>F6D6F63C-FBEE-ED54-A700-01129AE8CB85</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F446A95-9223-3C6B-A7EE-A39F1DB9106F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

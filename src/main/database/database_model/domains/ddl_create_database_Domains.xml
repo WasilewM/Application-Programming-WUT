@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="ddl_create_database_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_0_0" id="318A8D53-7818-4292-79BF-DEEC97872DD1">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_4 CHAR" id="6359EDE7-023D-F861-7B46-18048DADEC57">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_4_0_0" id="70D56A03-1552-864F-67CE-B122F943DFCF">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="75891C53-C5FE-6545-DF5A-3D97E9BF22C8">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_140 CHAR" id="D0CBDC7D-88ED-0CE4-4E82-35BB51DE7F02">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>140 CHAR</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="D16D3678-537F-EAEB-5606-EC7CC952EB42">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_40 CHAR" id="D2304311-38C6-F515-F8FA-875B1EBF242F">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_3 CHAR" id="D8601384-FA46-4E68-7E80-1C16E5EF15E6">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="FF39FEA2-8447-818A-E094-28D0E719A57E">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ddl_create_database_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

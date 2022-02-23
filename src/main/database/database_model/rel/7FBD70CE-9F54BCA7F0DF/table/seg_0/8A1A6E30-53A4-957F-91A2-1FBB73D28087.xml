@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A1A6E30-53A4-957F-91A2-1FBB73D28087" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="TICKETS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>FB997CE0-C60C-8E11-1220-DB8BAA2C6420</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TICKET_ID" id="D1BA331B-E76B-5252-0F69-0F3ADBFC6A3B">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>D3EF7BA4-C46E-F17F-3356-4F6950D59DBC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSENGER_ID" id="0EDE1D5C-B744-D148-020C-F7E77F00A4AA">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>F36670EE-5C15-9A5B-FA03-F013E6ABFAF2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E8AAFFD-718E-6C6F-756A-16C9E7C4EC66" referredColumn="5F446A95-9223-3C6B-A7EE-A39F1DB9106F"/>
+</associations>
+</Column>
+<Column name="FLIGHT_ID" id="3277FA68-F346-54D8-3CF0-74DCFF529746">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>2EF364D6-C1DC-A0C6-3918-D9038281FC68</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCC70BD8-EAC2-7591-367B-7157A719C67A" referredColumn="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</associations>
+</Column>
+<Column name="SEAT_NUMBER" id="9BC86FF5-B65E-88D5-18BF-ED4F109FB4EA">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>289856FF-51FE-E544-4DEC-5A9BDC1A307D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>318A8D53-7818-4292-79BF-DEEC97872DD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEAT_CLASS" id="4F47351F-7C14-A4DB-3230-72D78730AF9B">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>979F09C9-8B98-94D5-DDAE-B079C04B1BBD</importedID>
+<constraintName>TICKETS_TYPES</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<checkConstraint>
+<implementationDef dbType="Oracle9i" definition="seat_class LIKE &apos;ECO&apos; OR seat_class LIKE &apos;BUSINESS&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FD61458-EB13-5D86-9924-FEC84685E699" name="TICKETS_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>4635A2EA-C464-0BDC-EFFE-DF9EEE41B176</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1BA331B-E76B-5252-0F69-0F3ADBFC6A3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2201C5B5-1DC8-8CBC-BFB3-142F09FE0FF9" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00318201">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>02B7F11A-8EF3-EF26-3AA1-32454AD94F2B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1BA331B-E76B-5252-0F69-0F3ADBFC6A3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43DACDEB-43F4-5D29-EF12-EABFD9B2A61F" name="TICKETS_FLIGHTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3277FA68-F346-54D8-3CF0-74DCFF529746"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69C7EF1E-4611-6161-4B16-FB9FD5F739C3" name="TICKETS_PASSENGERS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EDE1D5C-B744-D148-020C-F7E77F00A4AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

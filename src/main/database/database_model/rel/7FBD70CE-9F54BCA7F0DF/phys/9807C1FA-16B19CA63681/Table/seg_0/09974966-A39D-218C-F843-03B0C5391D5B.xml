@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="FLIGHTS_CREW" directorySegmentName="seg_0" id="09974966-A39D-218C-F843-03B0C5391D5B">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>38D14070-6381-EC64-9210-CEC5C9F04DBE</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FLIGHT_ID" id="C83A4D93-6763-75E6-ACB7-19808510D10C">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREWMEMBER_ID" id="E5676EE7-827B-30CC-599B-16E1046BD26A">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="CREMEMBERS_FK" id="14570C99-4D10-C8B0-3639-58D0251103AC">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="FLIGHTS_FK" id="6B19AF8F-6FDE-CAE4-872A-9D68E9174855">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev9i>

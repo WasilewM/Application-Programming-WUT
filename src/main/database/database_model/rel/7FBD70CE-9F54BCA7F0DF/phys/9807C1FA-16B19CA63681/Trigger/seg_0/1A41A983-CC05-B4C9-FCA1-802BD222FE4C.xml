@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TG_CREW_POSITIONS_HISTORY" directorySegmentName="seg_0" id="1A41A983-CC05-B4C9-FCA1-802BD222FE4C">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_end_date              positions_history.end_date%TYPE;
+    v_crewmem_old_ph_id     positions_history.ph_id%TYPE;
+    v_crewmem_new_ph_id     positions_history.ph_id%TYPE;
+BEGIN    
+    SELECT MAX(ph_id)
+    INTO v_crewmem_old_ph_id
+    FROM positions_history
+    WHERE employee_id = :old.person_id;
+
+    IF v_crewmem_old_ph_id IS NOT NULL THEN
+        UPDATE positions_history
+        SET end_date = SYSDATE
+        WHERE ph_id = v_crewmem_old_ph_id;
+    END IF;
+
+    IF v_end_date IS NULL THEN
+        v_end_date := SYSDATE;
+    END IF;
+
+    INSERT INTO positions_history VALUES (get_new_positions_history_index, :new.person_id, :new.position_id, v_end_date, NULL);
+
+END tg_crew_positions_history;]]></body>
+<triggerTime>AFTER</triggerTime>
+<columns>621D85DC-081D-3E5A-B0D7-C3F6DCC99939</columns>
+<condition><![CDATA[new.position_id != old.position_id]]></condition>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>A8BD4808-B99A-E4DC-97A4-54C6E6423C78</table>
+</TriggerOraclev9i>

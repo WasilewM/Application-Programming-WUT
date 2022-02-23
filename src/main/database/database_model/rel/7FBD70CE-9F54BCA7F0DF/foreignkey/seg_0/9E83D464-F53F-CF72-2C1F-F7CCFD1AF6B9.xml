@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E83D464-F53F-CF72-2C1F-F7CCFD1AF6B9" containerWithKeyObject="17F65130-1DA7-431D-0A05-5553B04F2AFA" localFKIndex="A65B9F4C-5863-176A-6F74-46731D11CA64" name="POSTIONS_SALGRADES_FK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>ECC861EF-DD87-FEBE-C145-CF235F5DE2F2</importedID>
+<referredTableLongName>Z17.SALGRADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E8455BB6-1BF9-1B5E-F5B6-62FE700415F2</referredTableID>
+<keyObject>78DE7175-75C0-F265-F945-4A3FD5DE4F92</keyObject>
+<referredKeyID>78DE7175-75C0-F265-F945-4A3FD5DE4F92</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>SALGRADE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

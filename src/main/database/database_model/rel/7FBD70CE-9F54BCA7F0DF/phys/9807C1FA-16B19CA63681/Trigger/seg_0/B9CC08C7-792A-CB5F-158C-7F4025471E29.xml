@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TG_DELETE_AIRCRAFT" directorySegmentName="seg_0" id="B9CC08C7-792A-CB5F-158C-7F4025471E29">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>DELETE</actions>
+<body><![CDATA[DECLARE
+BEGIN
+    DELETE FROM flights
+    WHERE aircraft_id = :old.aircraft_id;
+END tg_delete_aircraft;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>4A7ADA56-B71F-948E-8F22-4508FFD9AC41</table>
+</TriggerOraclev9i>

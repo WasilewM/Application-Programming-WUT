@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6AE2BDC-41FB-66E5-D08D-34A6775869FA" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="POSITIONS_HISTORY">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>CF54018A-4798-E121-D8CD-89E8594A8A41</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PH_ID" id="0DD426FD-1C66-F476-57A0-A475E22C6013">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>B6509157-D63E-6F9D-8C0F-DB9844F325E4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>70D56A03-1552-864F-67CE-B122F943DFCF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_ID" id="02B77148-B3B8-52A3-58C1-153C3098D2D0">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>8C17B339-B2EB-0DFD-FE4D-23F7E19FAB8A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41243B1E-679F-9D18-FAB2-328AF374399E" referredColumn="89657878-8593-5DB6-83BB-A338E62DF9BC"/>
+</associations>
+</Column>
+<Column name="POSITION_ID" id="A5F0CE44-17CD-C946-8D42-BD1079D4F1CE">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>A600A9E1-6A13-F30A-63FB-F3534C27E055</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D16D3678-537F-EAEB-5606-EC7CC952EB42</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F24250E-8F51-5C7C-041F-C8FA7EEED850" referredColumn="C42614DC-2E2D-043A-8FCC-D66ABBEB0942"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="5DD6B176-9900-576B-BE1F-848E2ABE32EF">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>E6DC0D8F-B357-EA18-419D-13A366AA7954</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>FF39FEA2-8447-818A-E094-28D0E719A57E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="5B76FD02-700C-05DD-8390-98A1D5D50A62">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>A6BDD401-1628-5629-C3BC-55B2A6009C50</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>FF39FEA2-8447-818A-E094-28D0E719A57E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D1A8998-F040-3CA1-64E4-FE80250F7C09" name="POSITIONS_HISTORY_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>632996F1-53E4-C2EE-C544-4E847B07ACFA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DD426FD-1C66-F476-57A0-A475E22C6013"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E52B3CCC-CF76-8994-0BA5-5C649DC82370" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00322443">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>586D56B3-64F8-2634-D429-14333F085C08</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DD426FD-1C66-F476-57A0-A475E22C6013"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD6B4FBC-F927-8802-458F-3958A64543D8" name="PH_CREWMEMBERS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02B77148-B3B8-52A3-58C1-153C3098D2D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC113999-F352-0896-058B-B7FA5836CBC6" name="PH_POSITIONS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F0CE44-17CD-C946-8D42-BD1079D4F1CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

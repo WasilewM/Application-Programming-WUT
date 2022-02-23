@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D84853E9-14EF-8606-F5A2-F75C8674F00A" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="OCCUPIED_BUSINESS_SEATS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>08C50480-6F03-C9DA-9228-D405942D9D1E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FLIGHT_ID" id="B6D3C780-256F-19A7-E742-DDA0950F52F9">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>3224251E-B7D9-6EEA-8744-C8F50F51336C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB70778D-C922-E604-2444-0A7C4ECB9470" referredColumn="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</associations>
+</Column>
+<Column name="SEAT_NUMBER" id="CB80EFA3-EF1F-4E1F-C452-356F5C29A8FA">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>5BC3DE54-C692-78AD-3BBA-FD5C092FEF58</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C8CA0B7-BBA9-BA2A-1753-6285705EF395" name="BUSINESS_SEATS_FLIGHTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6D3C780-256F-19A7-E742-DDA0950F52F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

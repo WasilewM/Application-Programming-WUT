@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8A162634-6A38-C9F0-E421-7F22BB225AA7" containerWithKeyObject="7AF37928-468B-71F1-4AF1-FE125CDBE1F1" localFKIndex="41F69BD3-6264-4A69-5E87-073C95701CE6" name="DESTINATION_AIRPORTS_FK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>34905283-FD96-2AAB-6489-89C5A8633EFF</importedID>
+<referredTableLongName>Z17.AIRPORTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7F6CECBE-EEA1-D3D9-6511-3D3E79966834</referredTableID>
+<keyObject>858E3A70-9BF5-3917-0D5E-DC75EB1099D7</keyObject>
+<referredKeyID>858E3A70-9BF5-3917-0D5E-DC75EB1099D7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ICAO_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

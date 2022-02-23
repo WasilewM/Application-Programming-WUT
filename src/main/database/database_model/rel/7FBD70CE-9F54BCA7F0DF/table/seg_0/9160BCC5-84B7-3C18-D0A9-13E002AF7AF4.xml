@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9160BCC5-84B7-3C18-D0A9-13E002AF7AF4" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="OCCUPIED_ECO_SEATS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>AF171559-3165-874A-B02F-3836D14F1831</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FLIGHT_ID" id="920D3BD4-B029-6611-FC46-DC1D53B089F6">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>A314CAF7-F0EC-6183-ABA4-F9D0AB943533</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36FB8B4A-5308-98A3-2C5D-4667A552F92E" referredColumn="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</associations>
+</Column>
+<Column name="SEAT_NUMBER" id="2E58BF5E-1BCB-F679-54E7-20BC9DC5A962">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>F7ED6FF8-9427-CA2B-D1B3-1155F4BE7E24</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A636D200-FE7B-FEDD-4861-B8BDB2091C87" name="ECO_SEATS_FLIGHTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="920D3BD4-B029-6611-FC46-DC1D53B089F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

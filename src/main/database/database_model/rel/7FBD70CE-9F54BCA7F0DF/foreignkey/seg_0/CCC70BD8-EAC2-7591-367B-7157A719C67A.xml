@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CCC70BD8-EAC2-7591-367B-7157A719C67A" containerWithKeyObject="8A1A6E30-53A4-957F-91A2-1FBB73D28087" localFKIndex="43DACDEB-43F4-5D29-EF12-EABFD9B2A61F" name="TICKETS_FLIGHTS_FK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>5E32F68C-27AC-C7F4-5475-1CFF9145A62F</importedID>
+<referredTableLongName>Z17.FLIGHTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7AF37928-468B-71F1-4AF1-FE125CDBE1F1</referredTableID>
+<keyObject>D48CE4AB-66B8-1F65-492F-C78FADE7CC5E</keyObject>
+<referredKeyID>D48CE4AB-66B8-1F65-492F-C78FADE7CC5E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FLIGHT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

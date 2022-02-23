@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TG_BUSINESS_SEAT_NUMBER_CHANGE" directorySegmentName="seg_0" id="BAA852CC-6E90-3879-558D-367569AC9250">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_is_available  BOOLEAN;
+BEGIN
+    dbms_OUTPUT.put_line('tg_business_seat_number_change');
+    v_is_available := check_if_business_seat_available(:new.seat_number, :new.flight_id);
+
+    IF v_is_available THEN
+        UPDATE occupied_business_seats
+        SET seat_number = :new.seat_number
+        WHERE (seat_number = :old.seat_number) AND (flight_id = :old.flight_id);
+    ELSE
+        RAISE_APPLICATION_ERROR(-20001, 'Cannot book already occupied seat');
+    END IF;
+END tg_business_seat_number_change;]]></body>
+<triggerTime>AFTER</triggerTime>
+<columns>9BC86FF5-B65E-88D5-18BF-ED4F109FB4EA</columns>
+<condition><![CDATA[(UPPER(old.seat_class) = 'BUSINESS') AND (UPPER(new.seat_class) = 'BUSINESS') AND (new.seat_number <> old.seat_number)]]></condition>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>8A1A6E30-53A4-957F-91A2-1FBB73D28087</table>
+</TriggerOraclev9i>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TG_ADD_BUSINESS_SEATS_OCCUPANCY" directorySegmentName="seg_0" id="CD3E9BF4-6A7A-20B3-3888-630E0DD94E26">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+    v_is_available  BOOLEAN;
+BEGIN
+    dbms_output.put_line('tg_add_business_seats_occupancy');
+    v_is_available := check_if_business_seat_available(:new.seat_number, :new.flight_id);
+
+    IF v_is_available THEN
+        INSERT INTO occupied_business_seats VALUES (:new.flight_id, :new.seat_number);
+    ELSE
+        RAISE_APPLICATION_ERROR(-20001, 'Cannot book already occupied seat');
+    END IF;
+END tg_add_business_seats_occupancy;]]></body>
+<triggerTime>AFTER</triggerTime>
+<condition><![CDATA[UPPER(new.seat_class) LIKE 'BUSINESS']]></condition>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>8A1A6E30-53A4-957F-91A2-1FBB73D28087</table>
+</TriggerOraclev9i>

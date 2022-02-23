@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane style="-fx-border-color: #5584AC;" expanded="true" prefHeight="245.0" prefWidth="268.0"  xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.onibmagairlines.controllers.AircraftDialogController">
+   <content>
+      <GridPane hgap="6.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID Number" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <Label text="Brand" GridPane.rowIndex="2" />
+            <Label text="Model" GridPane.rowIndex="3" />
+            <Label text="Eco seats number" GridPane.rowIndex="4" />
+            <Label text="Business seats number" GridPane.rowIndex="5" />
+            <TextField id="nameTextField" fx:id="idNumTextField" GridPane.columnIndex="1" />
+            <TextField id="IATAcodeTextField" fx:id="nameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="ICAOcodeTextField" fx:id="brandTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="cityTextField" fx:id="modelTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Spinner fx:id="ecoSeatsNumSpinner" editable="true" initialValue="0" max="1000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Spinner fx:id="businessSeatsNumSpinner" editable="true" initialValue="0" max="1000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+</DialogPane>

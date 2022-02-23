@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TH_CHECK_SEAT_NUMBER" directorySegmentName="seg_0" id="BC2F1886-DCD6-1955-B57A-DF045BB4E4EC">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+    -- eco and business seat are of the same data type
+    v_max_seats_num     aircrafts.max_eco_seats%TYPE;
+BEGIN
+    IF UPPER(:new.seat_class) LIKE 'ECO' THEN
+        SELECT a.max_eco_seats
+        INTO v_max_seats_num
+        FROM flights f
+            LEFT JOIN aircrafts a ON (f.aircraft_id = a.aircraft_id)
+        WHERE f.flight_id = :new.flight_id;
+    ELSE
+        SELECT a.max_business_seats
+        INTO v_max_seats_num
+        FROM flights f
+            LEFT JOIN aircrafts a ON (f.aircraft_id = a.aircraft_id)
+        WHERE f.flight_id = :new.flight_id;
+    END IF; 
+
+    IF (:new.seat_number < 1) OR (:new.seat_number > v_max_seats_num) THEN
+        RAISE_APPLICATION_ERROR(-20002, 'Cannot book seat number greater than maximum or smaller than 1');
+    END IF;
+END tg_check_seat_number;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>8A1A6E30-53A4-957F-91A2-1FBB73D28087</table>
+</TriggerOraclev9i>

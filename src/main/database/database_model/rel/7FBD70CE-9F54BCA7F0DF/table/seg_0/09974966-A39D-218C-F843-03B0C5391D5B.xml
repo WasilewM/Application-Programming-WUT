@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09974966-A39D-218C-F843-03B0C5391D5B" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="FLIGHTS_CREW">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>80CEC98A-1658-6008-47FA-6E6E8A276CAC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FLIGHT_ID" id="C83A4D93-6763-75E6-ACB7-19808510D10C">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>33B59BDB-0C39-BC52-10FA-ACAD173B3069</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E3F8DF2-2254-2F16-F233-9F0ADCA024F9" referredColumn="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</associations>
+</Column>
+<Column name="CREWMEMBER_ID" id="E5676EE7-827B-30CC-599B-16E1046BD26A">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>20A1650D-FD0B-B3B3-D112-3AF48195862B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8DD80EC-7CE5-CA29-A615-ED405B8C9326" referredColumn="89657878-8593-5DB6-83BB-A338E62DF9BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14570C99-4D10-C8B0-3639-58D0251103AC" name="CREMEMBERS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5676EE7-827B-30CC-599B-16E1046BD26A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B19AF8F-6FDE-CAE4-872A-9D68E9174855" name="FLIGHTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C83A4D93-6763-75E6-ACB7-19808510D10C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

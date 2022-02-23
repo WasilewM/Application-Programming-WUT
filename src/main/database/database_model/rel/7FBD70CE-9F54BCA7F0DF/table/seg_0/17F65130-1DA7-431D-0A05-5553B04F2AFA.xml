@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17F65130-1DA7-431D-0A05-5553B04F2AFA" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="POSITIONS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>8DCFF5E0-7293-4585-9546-2F6CAA0808D7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="POSITION_ID" id="C42614DC-2E2D-043A-8FCC-D66ABBEB0942">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>087D2831-515D-6270-0E16-D360DC4B8660</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D16D3678-537F-EAEB-5606-EC7CC952EB42</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="A0CCFA6F-BDD2-935E-FD39-5B6C7E5F838D">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>605E55AF-ECC9-516D-54A7-31EE7057A24F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALGRADE" id="1F0FF591-AC81-AF85-944B-07A4E9505D06">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>E682DC62-C4F5-4EA8-F83E-97E9390E1554</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>75891C53-C5FE-6545-DF5A-3D97E9BF22C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E83D464-F53F-CF72-2C1F-F7CCFD1AF6B9" referredColumn="CE435C3A-0388-DB4F-1806-6BD46E662BF7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAA1E4A7-4C5C-521F-E2AC-B2201BAEC54F" name="POSITIONS_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>0AAFF755-6B63-B53D-DC16-6A1A0D30AFDA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C42614DC-2E2D-043A-8FCC-D66ABBEB0942"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A0A0E99-1CF1-2DD3-68D6-14FD8DF73ED0" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00322437">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>59628431-C7A6-DC85-A163-51A3224AA435</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C42614DC-2E2D-043A-8FCC-D66ABBEB0942"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A65B9F4C-5863-176A-6F74-46731D11CA64" name="POSTIONS_SALGRADES_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F0FF591-AC81-AF85-944B-07A4E9505D06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

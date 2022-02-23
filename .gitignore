@@ -1,0 +1,16 @@
+target/
+/.idea/dataSources.local.xml
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee.xml
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472.xml
+/fix_git.cmd
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee/storage_v2/_src_/schema/MKOWAL21.sGDlSQ.meta
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee/storage_v2/_src_/schema/MKOWAL21.sGDlSQ.zip
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta
+/.idea/sqldialects.xml
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee/storage_v2/_src_/schema/SYS.rUIBAA.meta
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472/storage_v2/_src_/schema/SYS.rUIBAA.meta
+/.idea/dataSources/e3c0ca38-84d8-45ec-8336-4ed1f17aa6ee/storage_v2/_src_/schema/SYSTEM.L2avkg.meta
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472/storage_v2/_src_/schema/SYSTEM.L2avkg.meta
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472/storage_v2/_src_/schema/Z17.AFgBAA.meta
+/.idea/dataSources/e8205d27-95f8-4f01-b02d-692ac84dc472/storage_v2/_src_/schema/Z17.AFgBAA.zip

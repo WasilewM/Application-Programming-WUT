@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="OCCUPIED_ECO_SEATS" directorySegmentName="seg_0" id="9160BCC5-84B7-3C18-D0A9-13E002AF7AF4">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>38D14070-6381-EC64-9210-CEC5C9F04DBE</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SEAT_NUMBER" id="2E58BF5E-1BCB-F679-54E7-20BC9DC5A962">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLIGHT_ID" id="920D3BD4-B029-6611-FC46-DC1D53B089F6">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="ECO_SEATS_FLIGHTS_FK" id="A636D200-FE7B-FEDD-4861-B8BDB2091C87">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev9i>

@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AF37928-468B-71F1-4AF1-FE125CDBE1F1" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="FLIGHTS">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>051E8E7A-135E-17BA-1F35-946BC67301AA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FLIGHT_ID" id="DCAD0317-A643-4697-E583-C1455AB2470A">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>E7332D74-35CF-0695-BFCA-53B14FA7FF99</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIGIN_AIRPORT" id="F12FB56B-E19E-F591-5DE4-45BABB50156E">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>86783F1F-B23B-C1A1-DE45-CABFFA530941</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6359EDE7-023D-F861-7B46-18048DADEC57</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39214ED2-6D11-0DA3-810F-15F5F2C5056E" referredColumn="CB1EB38E-CA45-37FA-5F62-02EC685A6879"/>
+</associations>
+</Column>
+<Column name="DESTINATION_AIRPORT" id="BD701073-2969-0FBB-3DC8-C87D6DA18ABF">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>51BE83B8-D2BA-FC2B-5570-09E6E6BCE0A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6359EDE7-023D-F861-7B46-18048DADEC57</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A162634-6A38-C9F0-E421-7F22BB225AA7" referredColumn="CB1EB38E-CA45-37FA-5F62-02EC685A6879"/>
+</associations>
+</Column>
+<Column name="DEPARTURE_TIME" id="6E2F8198-D0B0-C94D-CBF3-6A87FB939E0A">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>088E6BAF-A6D6-C72B-E9EF-CABC5ADC7126</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>FF39FEA2-8447-818A-E094-28D0E719A57E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARRIVAL_TIME" id="499A2F4C-E77F-0340-B238-65687BCDBF89">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>8AB3E654-3A3C-2205-0E0D-5808C2351500</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>FF39FEA2-8447-818A-E094-28D0E719A57E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AIRCRAFT_ID" id="745624CA-C778-FA62-B00F-A2E928CA3CCC">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>4BF5F577-4809-C994-E715-2E5F1F255E4C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2304311-38C6-F515-F8FA-875B1EBF242F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C0E36A5-A522-0593-7DB4-E4FE420B8E02" referredColumn="98ED3C8F-DD00-BBE0-561E-57A79999A083"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D48CE4AB-66B8-1F65-492F-C78FADE7CC5E" name="FLIGHTS_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>059AD437-FD8D-0002-DCB6-AA53CB1177A6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5833128-CF03-BEA9-FC06-047C45BE0FD3" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00318251">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>6A4E7178-4B78-7271-3F0B-6213015FFD82</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAD0317-A643-4697-E583-C1455AB2470A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41F69BD3-6264-4A69-5E87-073C95701CE6" name="DESTINATION_AIRPORTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD701073-2969-0FBB-3DC8-C87D6DA18ABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AD667A5-F9B1-7295-FBDE-1F228A148E9F" name="FLIGHTS_AIRCRAFTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="745624CA-C778-FA62-B00F-A2E928CA3CCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8281D952-5621-8C18-815A-B8A97C3F8066" name="ORIGIN_AIRPORTS_FK">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F12FB56B-E19E-F591-5DE4-45BABB50156E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="FLIGHT_TIME" directorySegmentName="seg_0" id="A7BCB369-0168-915C-B7BB-A29F249C5ED6">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>63C08B77-8871-18A1-FA4E-0741E5F9D14A</importedID>
+<rule><![CDATA[departure_time < arrival_time]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

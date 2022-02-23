@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8455BB6-1BF9-1B5E-F5B6-62FE700415F2" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SALGRADES">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>F7935079-0FC1-7A91-F920-AABDE4BAA32C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SALGRADE_ID" id="CE435C3A-0388-DB4F-1806-6BD46E662BF7">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>9E69044C-1856-604E-B6C8-37E8CB67C426</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>75891C53-C5FE-6545-DF5A-3D97E9BF22C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_SALARY" id="C437DEF3-8B97-E0E2-F7F0-50C628E354A0">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>C3975DF0-6518-9247-6D10-A1B015AFAC74</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>75891C53-C5FE-6545-DF5A-3D97E9BF22C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SALARY" id="919C61DB-5479-9D66-16B8-0549DB4804D8">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>E764D076-709A-5AD6-5BEB-E8AA11C2603E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>75891C53-C5FE-6545-DF5A-3D97E9BF22C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78DE7175-75C0-F265-F945-4A3FD5DE4F92" name="SALGRADES_PK">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>40E3BCB4-7D23-D16D-6C0B-2C18ED6C5BF0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE435C3A-0388-DB4F-1806-6BD46E662BF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4390B2C9-B6D3-8776-F60A-7F3F1E9088BC" schemaObject="A6148DE9-344B-8CF2-DC42-7694E14C53CC" name="SYS_C00358790">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>E4E47FA3-5785-AD11-E5D2-7D6E7A978735</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE435C3A-0388-DB4F-1806-6BD46E662BF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHECK_SALARY_FORKS" directorySegmentName="seg_0" id="3E7FBBB3-5AD3-C601-7C9C-51F8D2083008">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<importedID>6E70C77A-66CB-4EF0-F5E6-E7EDD02AC673</importedID>
+<rule><![CDATA[min_salary < max_salary]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="TICKETS" directorySegmentName="seg_0" id="8A1A6E30-53A4-957F-91A2-1FBB73D28087">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>38D14070-6381-EC64-9210-CEC5C9F04DBE</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PASSENGER_ID" id="0EDE1D5C-B744-D148-020C-F7E77F00A4AA">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLIGHT_ID" id="3277FA68-F346-54D8-3CF0-74DCFF529746">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEAT_CLASS" id="4F47351F-7C14-A4DB-3230-72D78730AF9B">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEAT_NUMBER" id="9BC86FF5-B65E-88D5-18BF-ED4F109FB4EA">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TICKET_ID" id="D1BA331B-E76B-5252-0F69-0F3ADBFC6A3B">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v9i.IndexProxyOraclev9i" name="SYS_C00318201" id="2201C5B5-1DC8-8CBC-BFB3-142F09FE0FF9">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<computeStatistics>YES</computeStatistics>
+<logging></logging>
+<segment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="TICKETS_FLIGHTS_FK" id="43DACDEB-43F4-5D29-EF12-EABFD9B2A61F">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="TICKETS_PASSENGERS_FK" id="69C7EF1E-4611-6161-4B16-FB9FD5F739C3">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="TICKETS_PK" id="8FD61458-EB13-5D86-9924-FEC84685E699">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<computeStatistics>YES</computeStatistics>
+<logging></logging>
+<segment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<indexSegment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev9i>

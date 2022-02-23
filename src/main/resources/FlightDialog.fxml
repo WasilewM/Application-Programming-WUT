@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<?import org.controlsfx.control.SearchableComboBox?>
+
+<?import jfxtras.scene.control.LocalDateTimeTextField?>
+<DialogPane style="-fx-border-color: #5584AC;" expanded="true" prefHeight="369.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.onibmagairlines.controllers.FlightDialogController">
+   <content>
+      <GridPane hgap="6.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Flight number" />
+            <Label text="Origin airport" GridPane.rowIndex="1" />
+            <Label text="Destination airport" GridPane.rowIndex="2" />
+            <Label text="Departure time" GridPane.rowIndex="3" />
+            <Label text="Arrival time" GridPane.rowIndex="4" />
+            <Label text="Aircraft" GridPane.rowIndex="5" />
+            <Label text="Captain" GridPane.rowIndex="6" />
+            <Label text="First officer" GridPane.rowIndex="7" />
+            <Label text="Stewards" GridPane.rowIndex="8" />
+            <Label text="Technicians" GridPane.rowIndex="9" />
+            <TextField id="nameTextField" fx:id="flightNumTextField" GridPane.columnIndex="1" />
+            <SearchableComboBox fx:id="originChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <SearchableComboBox fx:id="destinationChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <LocalDateTimeTextField fx:id="departureDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <LocalDateTimeTextField fx:id="arrivalDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <SearchableComboBox fx:id="aircraftChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <SearchableComboBox fx:id="captainChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <SearchableComboBox fx:id="firstOfficerChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <CheckComboBox fx:id="stewardsCheckComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <CheckComboBox fx:id="techniciansCheckComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+</DialogPane>

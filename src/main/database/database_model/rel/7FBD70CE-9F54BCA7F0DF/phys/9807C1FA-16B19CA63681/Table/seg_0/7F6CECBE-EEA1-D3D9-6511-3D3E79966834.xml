@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="AIRPORTS" directorySegmentName="seg_0" id="7F6CECBE-EEA1-D3D9-6511-3D3E79966834">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>38D14070-6381-EC64-9210-CEC5C9F04DBE</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ADDRESS" id="2E2132E1-C91D-8635-2BD6-A98D71279E0A">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY" id="3F501F65-EA1F-C35C-B05D-F027E102AA0E">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="65FD9B55-2928-E1AD-64C1-1AB5E58930DE">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IATA_CODE" id="78E2843E-AE50-DA35-135B-DE0F96A383ED">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="7ABBB35F-FA1F-2C73-6CE4-DDE2396636FC">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ICAO_CODE" id="CB1EB38E-CA45-37FA-5F62-02EC685A6879">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v9i.IndexProxyOraclev9i" name="SYS_C00318271" id="68063811-CC16-6174-DAD1-0DD7141A31A0">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<schemaObject>A6148DE9-344B-8CF2-DC42-7694E14C53CC</schemaObject>
+<computeStatistics>YES</computeStatistics>
+<logging></logging>
+<segment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="AIRPORTS_PK" id="858E3A70-9BF5-3917-0D5E-DC75EB1099D7">
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:18 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<computeStatistics>YES</computeStatistics>
+<logging></logging>
+<segment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</segment>
+<tableSpace>8D2DF5C5-26AF-50E9-4FC5-D6955DA91C8F</tableSpace>
+<indexSegment>1A6F1BA4-41B0-5557-0AC3-A84C44E230A3</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev9i>

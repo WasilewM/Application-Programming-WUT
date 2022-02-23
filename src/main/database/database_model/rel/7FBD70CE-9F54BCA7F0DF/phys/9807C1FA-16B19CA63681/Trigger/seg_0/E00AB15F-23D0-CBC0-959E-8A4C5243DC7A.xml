@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TriggerOraclev9i" name="TG_DELETE_ECO_SEAT_OCCUPANCY" directorySegmentName="seg_0" id="E00AB15F-23D0-CBC0-959E-8A4C5243DC7A">
+<sourceDDLFile>ddl_create_database.sql</sourceDDLFile>
+<createdBy>home</createdBy>
+<createdTime>2022-01-26 17:22:13 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<actions>DELETE</actions>
+<body><![CDATA[BEGIN
+    DELETE FROM occupied_eco_seats
+    WHERE (flight_id = :old.flight_id) AND (seat_number = :old.seat_number);
+END tg_delete_eco_seat_occupancy;]]></body>
+<triggerTime>AFTER</triggerTime>
+<condition><![CDATA[UPPER(old.seat_class) = 'ECO']]></condition>
+<owner>BA7A9871-88A4-95CF-4E2A-F085BEEBE2CC</owner>
+<table>8A1A6E30-53A4-957F-91A2-1FBB73D28087</table>
+</TriggerOraclev9i>
